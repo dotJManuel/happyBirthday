@@ -242,11 +242,18 @@
     <div class="balloon"></div>
     <div class="balloon"></div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
     <script>
-        function showConfetti() {
-            alert(`¡Fiesta virtual! 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎂🎂🎂🎂🎂🎂🎂🎂🎂 🍾🍾🍾🍾🍾🍾🍾🍾🍾🍾🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎆🎆🎆🎆🎆🎆 👻👻👻👻`);
-        }
+      function showConfetti() {
+        Swal.fire({
+          title: '¡Fiesta virtual!',
+          text: '¡Disfruta de tu día al máximo! 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎂🎂🎂🎂🎂🎂🎂🎂🎂 🍾🍾🍾🍾🍾🍾🍾🍾🍾🍾🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇🎆🎆🎆🎆🎆🎆 👻👻👻👻',
+          icon: 'success',
+          confirmButtonText: '¡Gracias!'
+        });
+      }
     </script>
+    
 </body>
 
 </html>
