@@ -11,6 +11,7 @@ body {
 .contenedor {
     background: #ffffff;
     width: 100vw;
+    /* height: 90vh; */
     overflow: hidden;
     margin: auto;
     position: relative;
