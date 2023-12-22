@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+
+.contenedor {
+    background: #ffffff;
+    width: 100vw;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    display: block;
+    padding: 10px;
+    min-height: 100vh;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, green, yellow, red) 1;
+}
+
+.message {
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-style: normal;
+    font-size: 2rem;
+    margin: 1rem 0 1.5rem 0;
+    font-family: 'Mountains of Christmas';
+    color: red;
+    padding: 1rem;
+    
+}
+
+p {
+    font-family: 'Mountains of Christmas'; 
+    font-size: 1.4rem;
+    color: green;
+    padding: 0 1rem 0 1rem;
+    position: fixed;
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 4rem;
+        position: fixed;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    p {
+        font-size: 2rem;
+        position: fixed;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 2.5rem;
+        position: fixed;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    p {
+        font-size: 1.2rem;
+        
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+    
