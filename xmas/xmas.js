@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const valorURL = obtenerValorParametro('id');
     insertarTexto(valorURL);
+    cambiarImgGift(valorURL);
     
     
 
@@ -73,5 +74,42 @@ function insertarTexto(valorURL){
     }
     else{
         textId.innerText = '"Espero que esta temporada navideña esté llena de alegría, amor y felicidad para ti y tu familia. Que la magia de la Navidad te llene de esperanza y te inspire a alcanzar tus sueños." 🎅';
+    }
+}
+
+function cambiarImgGift(valorURL){
+    const imgGift = document.getElementById("imgGift");
+
+    if(valorURL === 'dani'){
+        imgGift.src = "./xmas/dani.gif";
+        imgGift.alt = "xmas-anime";
+    }
+    else if(valorURL === 'carolina' ){
+        imgGift.src = "./xmas/carolina.gif";
+        imgGift.alt = "messi";
+    }
+    else if(valorURL === 'camargo' ){
+        imgGift.src = "./xmas/camargo.gif";
+        imgGift.alt = "santa claus";
+    }
+    else if(valorURL === 'tapia' ){
+        imgGift.src = "./xmas/tapia.webp";
+        imgGift.alt = "santa claus";
+    }
+    else if(valorURL === 'enrique' ){
+        imgGift.src = "./xmas/code.gif";
+        imgGift.alt = "dinosaurio";
+    }
+    else if(valorURL === 'luz' ){
+        imgGift.src = "./xmas/mom.gif";
+        imgGift.alt = "feliz navidad";
+    }
+    else if(valorURL === 'mom' ){
+        imgGift.src = "./xmas/mom.gif";
+        imgGift.alt = "feliz navidad";
+    }
+    else if(valorURL === 'code' ){
+        imgGift.src = "./xmas/code.gif";
+        imgGift.alt = "dinosaurio";
     }
 }

@@ -172,7 +172,7 @@ button:focus {
 }
 
 #imgGift.ampliada {
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 #by {
