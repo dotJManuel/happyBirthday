@@ -41,10 +41,17 @@ h1 {
 .message {
     font-family: 'Mountains of Christmas'; 
     font-size: 1.4rem;
-    color: green;
     padding: 0 1rem 0 1rem;
     position: fixed;
     z-index: 1;
+}
+
+#textId {
+    color: green;
+}
+
+.message span {
+    color: red;
 }
 
 @media (min-width: 992px) {
@@ -166,5 +173,12 @@ button:focus {
 
 #imgGift.ampliada {
     transform: scale(2);
+}
+
+#by {
+    font-family: 'Mountains of Christmas'; 
+    font-size: .8rem;
+    position: absolute;
+    bottom: 0;
 }
 
