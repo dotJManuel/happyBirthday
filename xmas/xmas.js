@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("overlay");
     const imgGift = document.getElementById("imgGift");
 
-    const miAudio = document.getElementById('miAudio');
-        miAudio.play();
-
     mostrarImagenBtn.addEventListener("click", function () {
         overlay.style.display = "flex";
 
@@ -35,9 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const valorURL = obtenerValorParametro('id');
     insertarTexto(valorURL);
     cambiarImgGift(valorURL);
-    
-    
 
+});
+
+document.addEventListener('click', function() {
+    const audio = document.getElementById('myAudio');
+    audio.play();
 });
 
 function obtenerValorParametro(nombreParametro) {
