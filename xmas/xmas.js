@@ -41,9 +41,6 @@ document.addEventListener('scroll', startAudio);
 function startAudio() {
     const audio = document.getElementById('myAudio');
     audio.play();
-
-    document.removeEventListener('click', startAudio);
-    document.removeEventListener('scroll', startAudio);
 }
 
 function obtenerValorParametro(nombreParametro) {
