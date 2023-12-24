@@ -33,12 +33,26 @@ document.addEventListener("DOMContentLoaded", function () {
     insertarTexto(valorURL);
     cambiarImgGift(valorURL);
 
+    // Obtener el elemento de audio
+    var audio = document.getElementById('myAudio');
+
+    // Crear un contexto de audio
+    var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+    // Conectar el elemento de audio al contexto de audio
+    var source = audioContext.createMediaElementSource(audio);
+    source.connect(audioContext.destination);
+
+    // Reproducir el audio después de cargar la página
+    audioContext.resume().then(function() {
+        audio.play();
+    });
 });
 
-document.addEventListener('click', function() {
-    const audio = document.getElementById('myAudio');
-    audio.play();
-});
+// document.addEventListener('click', function() {
+//     const audio = document.getElementById('myAudio');
+//     audio.play();
+// });
 
 function obtenerValorParametro(nombreParametro) {
     const parametros = new URLSearchParams(window.location.search);
