@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("overlay");
     const imgGift = document.getElementById("imgGift");
 
+    const miAudio = document.getElementById('miAudio');
+        miAudio.play();
+
     mostrarImagenBtn.addEventListener("click", function () {
         overlay.style.display = "flex";
 
